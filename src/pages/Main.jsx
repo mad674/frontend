@@ -489,7 +489,7 @@ const Main = () => {
                         <button onClick={onUpload} className={`btn btn-success mt-4 mb-4 ${!gen? 'd-none' : ''}`}>Upload Sketch</button>
                         <button onClick={rgen} className={`btn btn-success mt-4 mb-4 ${gen? 'd-none' : ''}`}>Random IMG generate</button>
                         <div></div>
-                        {/*<h3 className="mt-5" style={{color:"white" }}>Draw Your Design</h3>
+                        <h3 className="mt-5" style={{color:"white" }}>Draw Your Design</h3>
                         <div className="canvas-container mt-3 d-flex flex-column align-items-center">
                             <canvas 
                                 ref={canvasRef}
@@ -556,12 +556,13 @@ const Main = () => {
                                 </a>
                             </div>
                         ) : (canloading && <div className="spinner-border m-5" role="status"></div>)}
-                        */}
+                        
                     
                     </div>
                 ) : (
                     <p>Loading user details...</p>
-                )}
+                )
+                }
             </div>
             <footer style={{ backgroundColor: "black", color: "white", position: "fixed", bottom: "0", width: "100%", height: "4vh", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "0.8rem"}}className='lfooter'>
             <div className="footer">
