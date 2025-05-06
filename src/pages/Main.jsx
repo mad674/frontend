@@ -410,6 +410,7 @@ const Main = () => {
                     </button>
                     <div className={!navOpen ? 'navitems' : 'notnavitems'} id="navitems">
                         <ul>
+                            <li><Link to="/3d">3DView</li>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/explore">Explore</Link></li>
                             <li><Link to="/contact">Contact Us</Link></li>
