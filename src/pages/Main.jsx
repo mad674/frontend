@@ -382,8 +382,10 @@ const Main = () => {
     const rgen=()=>{
         setgeni(true);
         const randomIndex = Math.floor(Math.random() * 24)+1;
+        setType("");
         setGeneratedImage(`${API_URL}/rcimg/s${randomIndex}.png`);
         setGivenimg([`${API_URL}/rsimg/s${randomIndex}.png`]);
+        
     }
     const [selectedValue, setSelectedValue] = useState('gold'); 
     const [canselectedValue, setCanselectedValue] = useState('gold');
@@ -555,6 +557,7 @@ const Main = () => {
                                 <a href={cangeneratedImage} download={cangeneratedImage.split('-')[1]} className="btn btn-sm btn-outline-primary position-absolute top-0 end-0 m-1">
                                     &#8681;
                                 </a>
+                                <h1>{type}</h1>
                             </div>
                         ) : (canloading && <div className="spinner-border m-5" role="status"></div>)}
                         
